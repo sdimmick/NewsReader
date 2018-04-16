@@ -63,7 +63,6 @@ public class ArticleFetcherService extends IntentService {
             reader.beginObject();
 
             while (reader.hasNext()) {
-                Log.d(TAG, "Fuck yeah");
                 String name = reader.nextName();
                 if ("articles".equals(name)) {
                     handleArticlesArray(reader);
